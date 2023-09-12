@@ -1,8 +1,10 @@
+//Download express package 
 const express = require('express');
-
+//Initalizing express variables
 const app = express();
 const PORT = 4041;
 
+//Function for day of the week 
 const day = new Date.getDay();
 function today(){
     switch (day) {
@@ -23,11 +25,12 @@ function today(){
 };
 };
 
+// The UTC date and time 
 const day = new Date();
 const timeWithoutMilliseconds = new Date(day.setMilliseconds(0)).toISOString().slice(0, -5) + 'Z';
 
     
-
+// Starting api actions 
 app.get('/api', (req, res) => {
     return res.json({
         "slack_name": "req.query.slack_name",
