@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const PORT = 4041;
 
-const day = new Date.getDay()
+const day = new Date.getDay();
 function today(){
     switch (day) {
   case 0:
@@ -20,7 +20,7 @@ function today(){
     return "Friday";
   case  6:
     return "Saturday";
-}
+};
 };
 
 const day = new Date();
@@ -41,6 +41,6 @@ app.get('/api', (req, res) => {
 });
 
 app.listen(PORT,() => {
-    console.log("Server listening on ", PORT)
+    console.log("Server listening on ", PORT);
 });
 
