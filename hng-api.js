@@ -28,7 +28,7 @@ const timeWithoutMilliseconds = new Date(day.setMilliseconds(0)).toISOString().s
 
     
 
-app.get('/project1', (req, res) => {
+app.get('/api', (req, res) => {
     return res.json({
         "slack_name": "req.query.slack_name",
         "current_day": today(),
