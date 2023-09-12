@@ -26,7 +26,7 @@ function today(){
 const day = new Date();
 const timeWithoutMilliseconds = new Date(day.setMilliseconds(0)).toISOString().slice(0, -5) + 'Z';
 
-console.log(utcTimeWithoutMilliseconds);
+    
 
 app.get('/project1', (req, res) => {
     return res.json({
