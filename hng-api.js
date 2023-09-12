@@ -38,4 +38,9 @@ app.get('/project1', (req, res) => {
         "github_repo_url": "https://github.com/Uwanaaa/HNG-repo.git",
         "status_code": 200
     })
-})
+});
+
+app.listen(PORT,() => {
+    console.log("Server listening on ", PORT)
+});
+
